@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    margin: 0;
+    padding: 8px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    background: black;
+    justify-content: space-evenly;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #6011c7;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.slider{
+    width: 2000px;
+    margin: 30px auto;
+    border: 2px solid rgb(246, 246, 200);
+    overflow: hidden;
+    box-shadow: 0 4px 8px;
+}
+.slides{
+    display: flex;
+    width: 300%;
+    animation-name: movimiento;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+.slide{
+    width: 840px;
+}
+.slide img{
+    height: 480px;
+    display: block;
+}
+
+@keyframes movimiento{
+    0%{transform: translate(0);}
+    50%{transform: translate(-50%);}
+}
